@@ -9,6 +9,6 @@ public class Main {
 
 		System.out.println("Result = " + x + " meters"); // General rule for print and println
 
-		System.out.printf("Result = %.2f meters%n", x);
+		System.out.printf("Result = %.2f meters%n", x); // General rule for printf
 	}
 }
