@@ -6,18 +6,18 @@ public class Main {
 
 		Scanner sc = new Scanner(System.in);
 
-		int x = 5;
+		int hour;
 
-		System.out.println("Good morning");
+		System.out.println("What time is it?");
+		hour = sc.nextInt();
 
-		if (x < 0) {
+		if (hour < 12) {
+			System.out.println("Good morning");
+		}
+		else {
 			System.out.println("Good afternoon");
 		}
 
-		System.out.println("Good night");
-
 		sc.close();
-
 	}
-
 }
