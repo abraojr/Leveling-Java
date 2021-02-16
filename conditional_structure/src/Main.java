@@ -13,11 +13,13 @@ public class Main {
 
 		if (hour < 12) {
 			System.out.println("Good morning");
-		}
-		else {
+		} 
+		else if (hour < 18) {
 			System.out.println("Good afternoon");
 		}
-
+		else {
+			System.out.println("Good night");
+		}
 		sc.close();
 	}
 }
