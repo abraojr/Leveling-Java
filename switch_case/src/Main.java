@@ -17,29 +17,31 @@ public class Main {
 
 		x = sc.nextInt();
 
-		if (x == 1) {
+		switch (x) {
+		case 1:
 			day = "Sunday";
-		} 
-		else if (x == 2) {
+			break;
+		case 2:
 			day = "Monday";
-		} 
-		else if (x == 3) {
+			break;
+		case 3:
 			day = "Tuesday";
-		} 
-		else if (x == 4) {
+			break;
+		case 4:
 			day = "Wednesday";
-		} 
-		else if (x == 5) {
+			break;
+		case 5:
 			day = "Thursday";
-		} 
-		else if (x == 6) {
+			break;
+		case 6:
 			day = "Friday";
-		} 
-		else if (x == 7) {
+			break;
+		case 7:
 			day = "Saturday";
-		} 
-		else {
+			break;
+		default:
 			day = "Invalid value";
+			break;
 		}
 		System.out.printf("Day of Week: %s%n", day);
 		sc.close();
