@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
@@ -12,12 +12,8 @@ public class Main {
 
 		price = sc.nextDouble();
 
-		if (price < 20.0) {
-			discount = price * 0.1;
-		} 
-		else {
-			discount = price * 0.05;
-		}
+		discount = (price < 20.0) ? price * 0.1 : price * 0.05; // Example of ternary conditional expression
+
 		System.out.printf("Discount = U$ %.2f%n", discount);
 		sc.close();
 	}
